@@ -1,0 +1,11 @@
+i = 600851475143
+b = 1000
+
+while ( b > 0 ) {
+  if ( i % b === 0 ) {
+    console.log(b);
+    }
+    else {
+      b = b - 1
+    }
+  }
