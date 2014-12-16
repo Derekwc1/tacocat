@@ -1,0 +1,24 @@
+var i = 1;
+var j = 2;
+var c = 0;
+var d = 0;
+var x = [];
+var b = [];
+
+while (j < 4000000) {
+    c = i + j;
+    
+    x.push(c);
+    
+    i = j;
+    j = c;
+}
+
+
+for (var i = 0; i < x.length; ++i) { 
+    if ((x[i] % 2) === 0) {
+        d = d + x[i];
+    }
+}
+
+console.log(d);
